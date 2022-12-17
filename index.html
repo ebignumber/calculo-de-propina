@@ -11,11 +11,31 @@
     <div class="contenedor">
       <div class="cabecera">Calculo de propina</div>
       <div class="contenedor_input">
-        <label for="valor_consumo" class="opcion">Consumo</label>
-        <input type="number" name="valor_consumo" id="valor_consumo" />
-        <input type="button" value="Cálculo" onclick="optener()" class="boton">
+        <div class="container_consumo">
+          <label for="valor_consumo" class="opcion">Consumo</label>
+          <input type="number" name="valor_consumo" id="valor_consumo" />
+        </div>
+        <div class="container_usuarios">
+          <label for="valor_usuarios" class="opcion">Clientes</label>
+          <input type="number" name="valor_usuarios" id="valor_usuarios" />
+        </div>
+        <div class="container_botones">
+          <input
+            type="button"
+            value="Cálculo"
+            onclick="optener()"
+            class="boton"
+          />
+          <label for="opcion1" class="boton" >10%</label>
+          <input type="radio" name="propina" id="opcion1" class="check" checked>
+          <label for="opcion2" class="boton">20%</label>
+          <input type="radio" name="propina" id="opcion2" class="check">
+          <label for="opcion3" class="boton">30%</label>
+          <input type="radio" name="propina" id="opcion3" class="check">
+
+        </div>
       </div>
-      <div class="contenedor_resultado"></div>
+      <div id="contenedor_resultado"></div>
     </div>
     <script src="main.js"></script>
   </body>
