@@ -7,9 +7,12 @@
 :root {
   --texto_1: 30px;
   --texto_2: 24px;
+  --color_base: #c2eabd;
+  --color_cabecera: #f9dc5c;
+  --color_fondo: #011936;
 }
 body {
-  background-color: rgb(145, 145, 145);
+  background-color: var(--color_fondo);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -18,8 +21,10 @@ body {
 }
 .contenedor {
   width: 1200px;
-  height: 450px;
-  background-color: rgb(103, 145, 145);
+  min-width: 340px;
+  height: auto;
+  border-radius: 15px 15px 15px 15px;
+  background-color: var(--color_base);
   display: grid;
   grid-template-rows: 35px auto;
   grid-template-columns: 50% 50%;
@@ -30,7 +35,8 @@ body {
 .cabecera {
   grid-area: cabecera;
   height: 35px;
-  background-color: rgb(74, 224, 29);
+  border-radius: 15px 15px 0px 0px;
+  background-color: var(--color_cabecera);
   font-size: var(--texto_1);
   font-weight: bold;
   text-align: center;
@@ -41,6 +47,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 20px;
 }
 .contenedor_input > div {
   padding: 20px 0 20px 0;
@@ -61,6 +68,7 @@ body {
   font-size: var(--texto_2);
   font-weight: bold;
   padding: 12px 25px;
+  margin-top: 10px;
 }
 .boton:hover {
   background-color: #3d6970;
