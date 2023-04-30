@@ -5,7 +5,7 @@
 }
 
 :root {
-  --texto_1: 30px;
+  --texto_1: 24px;
   --texto_2: 24px;
   --color_base: #c2eabd;
   --color_cabecera: #f9dc5c;
@@ -20,7 +20,7 @@ body {
   align-items: center;
 }
 .contenedor {
-  width: 1200px;
+  width: 90%;
   min-width: 340px;
   height: auto;
   border-radius: 15px 15px 15px 15px;
@@ -52,6 +52,13 @@ body {
 .contenedor_input > div {
   padding: 20px 0 20px 0;
 }
+
+#valor_consumo,
+#valor_usuarios {
+  width: 160px;
+  height: 30px;
+  font-size: 24px;
+}
 .opcion {
   font-size: var(--texto_2);
   font-weight: bold;
@@ -71,12 +78,14 @@ body {
   margin-top: 10px;
 }
 .boton:hover {
-  background-color: #3d6970;
+  background-color: #5198a3;
 }
-
-/* .check{
+/* .boton_activo{ */
+  /* background-color: rgb(10, 119, 15); */
+/* } */
+.check {
   display: none;
-} */
+}
 
 #contenedor_resultado {
   grid-area: resultados;
