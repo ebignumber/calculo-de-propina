@@ -28,7 +28,7 @@ const optener = () => {
 
   if ((valor_calculo > 0) & (valor_cliente > 0)) {
     console.log(valor_calculo * propina);
-    resultado.innerText = `Valor de la propina es $${Math.round(
+    resultado.innerText = `Valor con propina propina es $${Math.round(
       valor_calculo * propina
     )}`;
     cuenta.innerText = `A pagar por cliente es $${Math.round(
