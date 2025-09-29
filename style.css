@@ -5,7 +5,7 @@
 }
 
 :root {
-  --texto_1: 24px;
+  --texto_1: 26px;
   --texto_2: 24px;
   --color_base: #c2eabd;
   --color_cabecera: #f9dc5c;
@@ -39,7 +39,9 @@ body {
   background-color: var(--color_cabecera);
   font-size: var(--texto_1);
   font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  color: #265393;
 }
 .contenedor_input {
   grid-area: datos;
@@ -102,6 +104,17 @@ body {
 }
 
 .resultado {
-  font-size: var(--texto_1);
+  font-size: var(--texto_2);
   font-weight: bold;
 }
+
+@media (max-width: 700px){
+  .contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contenedor_input{
+    margin-left: 0px;
+  }
+} 
